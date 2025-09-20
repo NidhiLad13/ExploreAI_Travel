@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* AI Trip Planner Design System - Travel & Adventure Theme */
+
+@layer base {
+  :root {
+    /* Background & Surface */
+    --background: 220 15% 97%;
+    --foreground: 225 15% 15%;
+
+    /* Cards & Surfaces */
+    --card: 0 0% 100%;
+    --card-foreground: 225 15% 15%;
+
+    /* Popover & Overlays */
+    --popover: 0 0% 100%;
+    --popover-foreground: 225 15% 15%;
+
+    /* Primary - Ocean Blue */
+    --primary: 210 90% 45%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 210 85% 60%;
+
+    /* Secondary - Sunset Orange */
+    --secondary: 25 95% 55%;
+    --secondary-foreground: 0 0% 98%;
+
+    /* Accent - Adventure Green */
+    --accent: 150 75% 45%;
+    --accent-foreground: 0 0% 98%;
+
+    /* Muted & Subtle */
+    --muted: 220 15% 94%;
+    --muted-foreground: 225 10% 45%;
+
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Borders & Inputs */
+    --border: 220 15% 88%;
+    --input: 220 15% 94%;
+    --ring: 210 90% 45%;
+
+    /* Design Tokens */
+    --radius: 0.75rem;
+
+    /* Travel Gradients */
+    --gradient-ocean: linear-gradient(135deg, hsl(210 90% 45%), hsl(210 85% 60%));
+    --gradient-sunset: linear-gradient(135deg, hsl(25 95% 55%), hsl(35 90% 60%));
+    --gradient-adventure: linear-gradient(135deg, hsl(150 75% 45%), hsl(160 70% 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 90% 45%) 0%, hsl(25 95% 55%) 50%, hsl(150 75% 45%) 100%);
+    
+    /* Shadows */
+    --shadow-travel: 0 10px 30px -5px hsl(210 90% 45% / 0.3);
+    --shadow-card: 0 4px 20px -2px hsl(225 15% 15% / 0.1);
+    --shadow-glow: 0 0 40px hsl(210 85% 60% / 0.4);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    background-image: radial-gradient(circle at 20% 80%, hsl(210 90% 45% / 0.05) 0%, transparent 50%),
+                      radial-gradient(circle at 80% 20%, hsl(25 95% 55% / 0.05) 0%, transparent 50%);
+  }
+}
+
+@layer components {
+  /* Travel-themed component styles */
+  .travel-gradient {
+    background: var(--gradient-hero);
+  }
+  
+  .ocean-gradient {
+    background: var(--gradient-ocean);
+  }
+  
+  .sunset-gradient {
+    background: var(--gradient-sunset);
+  }
+  
+  .adventure-gradient {
+    background: var(--gradient-adventure);
+  }
+  
+  .shadow-travel {
+    box-shadow: var(--shadow-travel);
+  }
+  
+  .shadow-card-travel {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+}
