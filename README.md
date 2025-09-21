@@ -1,73 +1,53 @@
-# Welcome to your Lovable project
+# Personalized Trip Planner with AI
 
-## Project info
+## Project Overview
+The **Personalized Trip Planner with AI** is an intelligent travel planning platform that dynamically generates **end-to-end itineraries** tailored to individual budgets, preferences, and real-time conditions. It allows travelers to plan trips effortlessly, discover hidden gems, and book services seamlessly in a single click.
 
-**URL**: https://lovable.dev/projects/49c9dc56-9c3f-4a64-bb53-855e9334347b
+---
 
-## How can I edit this code?
+## Features
+- **AI-Powered Personalization:** Generates itineraries based on budget, interests, and trip duration.  
+- **Real-Time Adaptation:** Adjusts plans for weather changes, delays, or last-minute availability.  
+- **Integrated Booking:** One-click booking via EMT Inventory and secure payment gateway.  
+- **Data Aggregation:** Pulls data from Google Maps, local events, hotels, and flight APIs.  
+- **Shareable Output:** Optimized itineraries ready to share with others.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## Use Cases
+- Travelers looking for customized trip plans.  
+- Users who want to save time and avoid overpaying.  
+- Travel agencies seeking AI-powered recommendations for clients.  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/49c9dc56-9c3f-4a64-bb53-855e9334347b) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## Technology Stack
 
-**Use your preferred IDE**
+**Frontend:**  
+- Web & Mobile App (React.js)  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+**AI & Machine Learning:**  
+- Google Gemini – Personalized itinerary generation  
+- Vertex AI – Adaptive recommendations  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+**Data Sources / APIs:**  
+- Google Maps API – Location & routing  
+- Local Events & Guides API – Activities & hidden gems  
+- Hotels & Flights APIs – Accommodation & travel  
 
-Follow these steps:
+**Backend & Storage:**  
+- Firebase – Authentication & storage  
+- BigQuery – Analytics & recommendations  
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+**Booking & Payment:**  
+- EMT Inventory – Booking management  
+- Payment Gateway – Secure payments  
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+**Output:**  
+- Dynamic, optimized, and shareable itineraries  
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## System Architecture
+The system consists of **frontend, AI layer, data sources, backend, booking/payment**, and **output modules**:
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/49c9dc56-9c3f-4a64-bb53-855e9334347b) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
